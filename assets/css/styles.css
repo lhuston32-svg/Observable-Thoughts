@@ -36,7 +36,7 @@ h1 {
 .hero-banner img {
     display: block;
     width: 100%;
-    height: 350px;
+    height: 280px;
     object-fit: cover;
 }
 
@@ -131,17 +131,21 @@ main p {
 }
 
 .page-container {
-
     max-width: 1400px;
-
     margin: 0 auto;
-
 }
 
 footer {
-    padding: 30px;
+    width: 100%;
+}
+
+footer {
     background-color: var(--background-color);
     border-top: 1px solid var(--primary-color);
+
+    padding: 30px;
+
+    margin-top: 25px;
 }
 
 footer h2 {
@@ -151,4 +155,63 @@ footer h2 {
 
 footer p {
     margin: 0;
+}
+
+/* =========================================
+   Product Grid
+========================================= */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* =========================================
+   Product Card
+========================================= */
+
+.product-card {
+    background-color: var(--content-color);
+    overflow: hidden;
+}
+
+.product-card-link {
+    display: block;
+    height: 100%;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.product-card-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+
+.product-card-content {
+    padding: 20px;
+}
+
+.product-card-title {
+    margin: 0 0 10px;
+    font-size: 24px;
+}
+
+.product-card-description {
+    margin: 0 0 12px;
+    line-height: 1.5;
+}
+
+.product-card-details {
+    margin: 0 0 20px;
+    font-size: 14px;
+}
+
+.product-card-button {
+    display: inline-block;
+    padding: 10px 16px;
+    border: 1px solid var(--primary-color);
 }

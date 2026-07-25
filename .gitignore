@@ -141,3 +141,14 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# Templates Folder
+
+# Collections Template
+collections_template.html
+
+# Product Card
+assets/css/templates/product_card_template.html
+
+# Product Grid
+assets/css/templates/product_grid_template.html
