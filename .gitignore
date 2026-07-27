@@ -148,7 +148,10 @@ vite.config.ts.timestamp-*
 collections_template.html
 
 # Product Card
-assets/css/templates/product_card_template.html
+assets/templates/product_card_template.html
 
 # Product Grid
-assets/css/templates/product_grid_template.html
+assets/templates/product_grid_template.html
+
+# Product Page 
+assets/templates/product_page_template.html
