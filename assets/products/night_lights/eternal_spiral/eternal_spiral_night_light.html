@@ -4,9 +4,19 @@
 
     <meta charset="UTF-8">
 
-    <title>Eternal Spiral Night Light | Observable Thoughts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../../../css/styles.css">
+    <title>Observable Thoughts</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allura&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../../../../assets/css/styles.css">
 
 </head>
 
@@ -15,6 +25,17 @@
 <header class="header">
 
     <h1>Observable Thoughts</h1>
+
+    <a
+        href="../../../../cart.html"
+        id="cart-button"
+        class="cart-button">
+
+        🛒 Cart
+
+        <span id="cart-count"></span>
+
+    </a>
 
 </header>
 
@@ -93,7 +114,13 @@
 
                     </section>
 
-                    <section class="product-information">
+                    <section
+                        class="product-information"
+                        data-collection="night_lights"
+                        data-product-id="eternal_spiral_night_light"
+                        data-product-name="Eternal Spiral Night Light"
+                        data-product-image="https://res.cloudinary.com/wv3msddc/image/upload/v1785131856/1_dvyxt4.jpg">
+
 
                         <h2>Eternal Spiral Night Light</h2>
 
@@ -103,35 +130,27 @@
                         </p>
 
                         <p class="product-price">
-                            Price to be added
+                            Price: <span id="product-price">Select a size</span>
                         </p>
 
                         <div class="product-options">
 
-                            <label for="bedding-size">
+                            <label for="product-size">
                                 Select Size
                             </label>
 
-                            <select id="bedding-size" name="bedding-size">
+                            <select id="product-size" name="product-size">
 
                                 <option value="">
                                     Choose a size
                                 </option>
 
-                                <option value="single">
-                                    Single
+                                <option value="15cm x 15cm">
+                                    15cm x 15cm
                                 </option>
 
-                                <option value="double">
-                                    Double
-                                </option>
-
-                                <option value="queen">
-                                    Queen
-                                </option>
-
-                                <option value="king">
-                                    King
+                                <option value="20cm x 20cm">
+                                    20cm x 20cm
                                 </option>
 
                             </select>
@@ -173,9 +192,19 @@
 
                         </section>
 
-                        <a class="product-enquiry-button" href="#">
-                            Contact About This Product
-                        </a>
+                        <section>
+                                                <button
+                                class="product-enquiry-button"
+                                id="add-to-cart-button"
+                                type="button">
+
+                                Add to Cart
+
+                            </button>
+
+                            <p id="cart-message"></p>
+
+                    </section>
 
                     </section>
 

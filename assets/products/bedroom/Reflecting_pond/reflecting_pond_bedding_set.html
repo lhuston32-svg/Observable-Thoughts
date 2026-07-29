@@ -4,9 +4,19 @@
 
     <meta charset="UTF-8">
 
-    <title>Reflecting Ponds Bedding Set | Observable Thoughts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../../../css/styles.css">
+    <title>Observable Thoughts</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allura&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../../../../assets/css/styles.css">
 
 </head>
 
@@ -15,6 +25,17 @@
 <header class="header">
 
     <h1>Observable Thoughts</h1>
+
+    <a
+        href="../../../../cart.html"
+        id="cart-button"
+        class="cart-button">
+
+        🛒 Cart
+
+        <span id="cart-count"></span>
+
+    </a>
 
 </header>
 
@@ -101,7 +122,12 @@
 
                     </section>
 
-                    <section class="product-information">
+                    <section
+                        class="product-information"
+                        data-collection="bedroom"
+                        data-product-id="reflecting_pond_bedding_set"
+                        data-product-name="Reflecting Pond Bedding Set"
+                        data-product-image="https://res.cloudinary.com/wv3msddc/image/upload/v1785131627/0_dffbim.jpg">
 
                         <h2>Reflecting Ponds Bedding Set</h2>
 
@@ -111,16 +137,16 @@
                         </p>
 
                         <p class="product-price">
-                            Price to be added
+                            Price: <span id="product-price">Select a size</span>
                         </p>
 
                         <div class="product-options">
 
-                            <label for="bedding-size">
+                            <label for="product-size">
                                 Select Size
                             </label>
 
-                            <select id="bedding-size" name="bedding-size">
+                            <select id="product-size" name="product-size">
 
                                 <option value="">
                                     Choose a size
@@ -181,9 +207,20 @@
 
                         </section>
 
-                        <a class="product-enquiry-button" href="#">
-                            Contact About This Product
-                        </a>
+                        </section>
+
+                                                <button
+                                class="product-enquiry-button"
+                                id="add-to-cart-button"
+                                type="button">
+
+                                Add to Cart
+
+                            </button>
+
+                            <p id="cart-message"></p>
+
+                        </section>
 
                     </section>
 

@@ -4,17 +4,39 @@
 
     <meta charset="UTF-8">
 
-    <title>Tartan Spiral Floor Rugs | Observable Thoughts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../../../css/styles.css">
+    <title>Observable Thoughts</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allura&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../../../../assets/css/styles.css">
 
 </head>
+
 
 <body>
 
 <header class="header">
 
     <h1>Observable Thoughts</h1>
+
+    <a
+        href="../../../../cart.html"
+        id="cart-button"
+        class="cart-button">
+
+        🛒 Cart
+
+        <span id="cart-count"></span>
+
+    </a>
 
 </header>
 
@@ -96,7 +118,12 @@
 
                     </section>
 
-                    <section class="product-information">
+                    <section
+                        class="product-information"
+                        data-collection="floor_rugs"
+                        data-product-id="tartan_lotus_floor_rug"
+                        data-product-name="Tartan Lotus Floor Rug"
+                        data-product-image="https://res.cloudinary.com/wv3msddc/image/upload/v1785131497/1_j3ubx9.jpg">
 
                         <h2>Tartan Lotus Floor Rug</h2>
 
@@ -106,37 +133,44 @@
                         </p>
 
                         <p class="product-price">
-                            Price to be added
+                            Price: <span id="product-price">Select a size</span>
                         </p>
 
                         <div class="product-options">
 
-                            <label for="rug-size">
+                            <label for="product-size">
                                 Select Size
                             </label>
 
-                            <select id="rug-size" name="floor rug">
+                            <select id="product-size" name="floor rug">
 
-                                <option value="">
+                                 <option value="">
                                     Choose a size
                                 </option>
 
-                                <option value="single">
-                                    Single
+                                <option value="110cm x 170cm">
+                                   110cm x 170cm
                                 </option>
 
-                                <option value="double">
-                                    Double
+                                <option value="60cm x 90cm">
+                                    60cm x 90cm
                                 </option>
 
-                                <option value="queen">
-                                    Queen
+                                <option value="91cm x 152cm">
+                                    91cm x 152cm
                                 </option>
 
-                                <option value="king">
-                                    King
+                                <option value="122cm x 183cm">
+                                    122cm x 183cm
                                 </option>
 
+                                <option value="152cm x 244cm">
+                                    152cm x 244cm
+                                </option>
+
+                                <option value="158cm x 274cm">
+                                    158cm x 274cm
+                                </option>
                             </select>
 
                         </div>
@@ -176,9 +210,19 @@
 
                         </section>
 
-                        <a class="product-enquiry-button" href="#">
-                            Contact About This Product
-                        </a>
+                        <section>
+                                                <button
+                                class="product-enquiry-button"
+                                id="add-to-cart-button"
+                                type="button">
+
+                                Add to Cart
+
+                            </button>
+
+                            <p id="cart-message"></p>
+
+                    </section>
 
                     </section>
 
